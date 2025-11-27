@@ -1,0 +1,181 @@
+<!--
+  File: index.html
+  Purpose: Single-file responsive portfolio ready for GitHub Pages.
+  Instructions:
+    1. Replace placeholder text (email, phone, social links, projects, resume link).
+    2. Save this file as `index.html`.
+    3. Create a GitHub repo named `the-sanzidanami-space.github.io` and upload this file to the repo root.
+    4. GitHub Pages will publish at: https://the-sanzidanami-space.github.io
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanzida Akter — Portfolio</title>
+  <meta name="description" content="I am a versatile digital professional with a background in CSE and a Minor in BBA. I specialize in web design, SEO, ads, lead generation, email marketing, graphic design, and project coordination." />
+  <style>
+    :root{--bg:#0f1724;--card:#f8fafc;--accent:#0ea5a4;--muted:#64748b}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%);color:#0f1724;line-height:1.5}
+    .container{max-width:980px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .brand{display:flex;flex-direction:column}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0;color:var(--muted)}
+
+    nav{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--bg);background:#fff;border:1px solid #e6eef6;font-weight:600}
+
+    main{display:grid;grid-template-columns:1fr;gap:24px;margin-top:28px}
+    .card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(15,23,36,0.06)}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:20px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:#eef6f6;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .project{border-radius:10px;padding:12px;background:linear-gradient(180deg,#ffffff,#fbfeff);border:1px solid #eef6f8}
+    .project h4{margin:0 0 6px}
+    .contact-list{list-style:none;padding:0;margin:12px 0}
+    .contact-list li{margin:8px 0}
+
+    footer{text-align:center;padding:18px;color:var(--muted);font-size:14px;margin-top:8px}
+
+    /* Responsive */
+    @media (max-width:880px){.two-col{grid-template-columns:1fr}.brand{align-items:flex-start}nav{justify-content:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px">SA</div>
+      <div class="brand">
+        <h1>Sanzida Akter</h1>
+        <p class="lead">Web Designer • Digital Marketer • SEO • Ads Specialist • Lead Generation • Virtual Assistant</p>
+      </div>
+    </header>
+
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#resume" style="background:var(--accent);color:#fff">Resume</a>
+    </nav>
+
+    <main>
+      <section id="about" class="card">
+        <div class="two-col">
+          <div>
+            <h2>About Me</h2>
+            <p><strong>I am a versatile digital professional with a background in CSE and a Minor in BBA.</strong> I specialize in web design, SEO, ads, lead generation, email marketing, graphic design, and project coordination—helping global clients streamline processes, boost engagement, and achieve digital growth.</p>
+
+            <div style="margin-top:12px">
+              <strong>Highlights</strong>
+              <ul>
+                <li>Degree: B.Sc. in Computer Science & Engineering (Minor: BBA)</li>
+                <li>Experience with clients across Kenya, Canada, Australia, India, the US & Bangladesh</li>
+                <li>Tools: WordPress, Google Ads, Facebook Ads, Canva, Adobe tools, ChatGPT & other AI tools</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:12px">
+              <strong>Core Skills</strong>
+              <div class="skills">
+                <span class="skill">Web Design</span>
+                <span class="skill">SEO</span>
+                <span class="skill">Google & Facebook Ads</span>
+                <span class="skill">Lead Gen</span>
+                <span class="skill">Email Marketing</span>
+                <span class="skill">Graphic Design</span>
+                <span class="skill">Project Coord.</span>
+                <span class="skill">AI Tools</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card" style="padding:18px">
+            <h3>Contact</h3>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:aktersanzida65@gmail.com">aktersanzida65@gmail.com</a></li>
+              <li><strong>Phone:</strong> +880 1758699646</li>
+              <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+            </ul>
+
+            <h4 style="margin-top:12px">Download</h4>
+            <p><a id="resume" href="resume.pdf" download>Download Resume (PDF)</a></p>
+
+            <h4 style="margin-top:12px">Social</h4>
+            <p><a href="#">LinkedIn</a> • <a href="#">GitHub</a> • <a href="#">Facebook</a></p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services" class="card">
+        <h2>Services</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
+          <div style="padding:12px;background:#fff;border-radius:8px;border:1px solid #eef6f8">
+            <h4>Web Design & Dev</h4>
+            <p>Responsive WordPress sites, landing pages, and UI design focused on conversion and accessibility.</p>
+          </div>
+          <div style="padding:12px;background:#fff;border-radius:8px;border:1px solid #eef6f8">
+            <h4>SEO & Content</h4>
+            <p>On-page & technical SEO, content strategy, and organic growth plans.</p>
+          </div>
+          <div style="padding:12px;background:#fff;border-radius:8px;border:1px solid #eef6f8">
+            <h4>Ads Management</h4>
+            <p>Google & Facebook Ads campaigns, remarketing, and performance optimization.</p>
+          </div>
+          <div style="padding:12px;background:#fff;border-radius:8px;border:1px solid #eef6f8">
+            <h4>Lead Generation</h4>
+            <p>Targeted funnels, CRM integration, and email workflows to nurture and convert leads.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Selected Projects</h2>
+        <div class="projects">
+          <div class="project">
+            <h4>Patient Appointment System</h4>
+            <p>Hospital booking system built with C# MVC and SQL Server (DB & secure auth).</p>
+            <p><small>Roles: Development, DB design, testing</small></p>
+          </div>
+
+          <div class="project">
+            <h4>Online Courier Management</h4>
+            <p>Courier tracking and dispatch platform with order management.</p>
+            <p><small>Roles: Architecture, implementation</small></p>
+          </div>
+
+          <div class="project">
+            <h4>Marketing Campaign — The Destiny Foods</h4>
+            <p>Ads strategy and content production for audience growth and conversions.</p>
+            <p><small>Roles: Ads management, creatives</small></p>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact & Hire Me</h2>
+        <p>If you’d like to work together, email me at <a href="mailto:aktersanzida65@gmail.com">aktersanzida65@gmail.com</a> or message on WhatsApp: +8801758699646. I’m available for freelance and remote roles.</p>
+
+        <form onsubmit="alert('This form is demo-only — replace with your form/backend or a mailto link.'); return false;" style="margin-top:12px;display:grid;gap:8px;max-width:640px">
+          <input type="text" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid #e6eef6"/>
+          <input type="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:1px solid #e6eef6"/>
+          <textarea placeholder="Message" required style="padding:10px;border-radius:8px;border:1px solid #e6eef6;min-height:100px"></textarea>
+          <button type="submit" style="padding:10px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:700">Send Message</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="card" style="display:inline-block;padding:12px 18px;background:transparent;border:none;box-shadow:none">© 2025 Sanzida Akter • Built with ❤</div>
+    </footer>
+  </div>
+</body>
+</html>
